@@ -29,7 +29,13 @@ jobs:
           
           ls -la
           
-          golangci-lint run go_web/.         
+          golangci-lint run go_web/main.go     
+          
+          echo "cd"
+          
+          cd go_web
+          
+          golangci-lint run
 #jobs:
 
 #  build:
