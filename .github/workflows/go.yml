@@ -7,23 +7,30 @@ on:
   pull_request:
     branches: [ main ]
 
+
 jobs:
-
-  build:
-    runs-on: ubuntu-latest
+  Hello:
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
+    - name: Hello World!
+      run: echo "Hello World
+#jobs:
 
-    - name: Set up Go
-      uses: actions/setup-go@v2
-      with:
-        go-version: 1.17
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@v2
 
-    - name: Build
-      run: go build -v ./...
+#    - name: Set up Go
+#      uses: actions/setup-go@v2
+#      with:
+#        go-version: 1.17
 
-    - name: Test
-      run: go test -v ./...
+#    - name: Build
+#      run: go build -v ./...
+
+#    - name: Test
+#      run: go test -v ./...
 
 #jobs:
 #  test:
