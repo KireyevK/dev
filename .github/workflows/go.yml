@@ -24,9 +24,7 @@ jobs:
           ls -la
           
           pwd
-          
-          golangci-lint run ./go_web     
-          
+                   
           golangci-lint help linters
 
         
