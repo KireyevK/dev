@@ -32,17 +32,11 @@ jobs:
           ls -la
           pwd
           
-          golangci-lint run go_web/main.go     
+          golangci-lint run ./go_web     
           
-          echo "cd"
-          
-          cd go_web
-          
-          ls -la
-          
-          pwd
-          
-          golangci-lint run
+          golangci-lint help linters
+
+        
 #jobs:
 
 #  build:
